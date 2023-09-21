@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackthon</title>
+    
+     <link rel="shortcut icon" href="https://www.dofactory.com/img/html/vangogh.jpg">
+
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <!-- stylesheet -->
+
+
+    <!-- bootstrap 5.0 cdn link----------------------------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- custom css ------------------------------------------------------->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- body tag----------------------------------------------------------------------------- -->
+
+<body>
+
+
+    <!-- nav bar tag--------------------------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    
+                  <button type="button" class="btn btn-outline-success mx-3">Login</button>
+
+                  <button type="button" class="btn btn-outline-success mx-3">SingUp</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    
+    <!-- carousel bootstrap---------------------------------------------------------- -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner image-size">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://static.fibre2fashion.com//articleresources/images/85/8471/shipping_small_Small.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class=" text-light">Wool Tracking</h3>
+              <h5 class=" text-light"> Begin with an introduction to wool tracking and its importance in the wool industry.</h5>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://media.istockphoto.com/id/1486358320/photo/the-pregnant-woman-is-sorting-baby-clothes-and-wanna-give-some-things-to-charity.jpg?s=612x612&w=is&k=20&c=j8C4XF19BSfXNXnjTordhk4Roo58zZrhrAAdqTZDJo0=" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>wool processing</h5>
+              <p>Explain why tracking wool is essential for quality control and supply chain management.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://media.istockphoto.com/id/1362787530/photo/donation-box-with-stuff.jpg?s=612x612&w=0&k=20&c=AFX1S73Ml80a5S09JTmR8q9WWhEEonUuQJfG-tuzRk0=" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Online wool market place</h5>
+              <p>Describe different methods and technologies used for wool tracking, such as RFID, QR codes, and blockchain.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    <!-- Card container page------------------------------------------------------------------------- -->
+
+
+    <div class="container-fluid ">
+        <div class="content">
+            <div class="pt-5"><h1 class="text-center text-underline">Quality Assurance</h1></div>
+
+            <div class="">
+              <div class="">
+                <div class="row flip-card">
+                  <div class="col-lg-4 col-md-6 col-sm-12 ">
+
+                    <!-- start first card------------------------------------------ -->
+                    <div class="flip-card">
+                      <div class="flip-card-front">
+                        <div class="inner">
+                          <img src="https://image.similarpng.com/very-thumbnail/2021/01/Fashion-shop-logo-design-on-transparent-background-PNG.png" class="icon" />
+                          <h3>Wool clothes</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+                            corrupti itaque dolore!
+                          </p>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="inner">
+                          <img src="https://i.pinimg.com/564x/e2/6f/51/e26f51de9c301a80e4989ae83290085b.jpg" class="icon" />
+                          <h3>iron man</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                            voluptatum eius quam debitis, sit amet sunt neque ipsum?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- ----------------------------------end first -->
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                   
+                    <!-- --------------------------------------------second start  -->
+
+
+                    <div class="flip-card">
+                      <div class="flip-card-front">
+                        <div class="inner">
+                          <img src="https://www-konga-com-res.cloudinary.com/w_700,f_auto,fl_lossy,dpr_1.0,q_auto/media/catalog/product/Z/P/138536_1533740835.jpg" class="icon" />
+                          <h3>Wool clothes</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+                            corrupti itaque dolore!
+                          </p>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="inner">
+                          <img src="https://www.goldstartool.com/picts/blog/tn1000x800-What-is-the-Difference-Between-Industrial-and-Domestic-Sewing-Machines.webp" class="icon" />
+                          <h3>thor</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                            voluptatum eius quam debitis, sit amet sunt neque ipsum?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- ----------------------------------------second end -->
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    
+                    <!-- third start ------------------------------------- -->
+                    <div class="flip-card">
+                      <div class="flip-card-front">
+                        <div class="inner">
+                          <img src="https://www.plm.automation.siemens.com/media/global/en/technical-publishing-imhe-1920x1080_tcm27-3264.jpg" class="icon" />
+                          <h3>Wool clothes</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+                            corrupti itaque dolore!
+                          </p>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="inner">
+                          <img src=" https://img.freepik.com/free-photo/front-view-young-attractive-lady-blue-construction-suit-helmet-controlling-machines-hangar-working-during-daytime-buildings-architecture-construction_140725-16223.jpg?w=2000" class="icon" />
+                          <h3>spider-man</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                            voluptatum eius quam debitis, sit amet sunt neque ipsum?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ------------------------------------------third end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- team------------------------------------- -->
+
+    <div class="container-fluid">
+      <div class="pt-5"><h1 class="text-center text-underline">Our Team of Roles and Responsiblilites </h1></div>
+
+      <div class="container">
+        <div class="row">
+          <!--  -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="text-center">UtKarsh Madeshiya</h5>
+                <p class="card-text">The primary role of this individual is to manage the team effectively, 
+                  ensuring that team members are aligned with the project's objectives and deadlines.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="text-center">Rupesh Kumar Gupta</h5>
+                <p class="card-text">The primary responsibility is designing and styling the frontend part of the project.
+                   This involves creating visually appealing and user-friendly interfaces.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card" style="width: 18rem;">
+              <img src="" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="text-center">Om ji Dwivedi</h5>
+                <p class="card-text">Responsible for overseeing the backend development, ensuring the server-side components of the web application function efficiently and securely.</p>
+              </div>
+            </div>
+
+          </div>
+          <!--  -->
+        </div>
+
+
+
+        <!-- one row end and second row start --------------------------- -->
+
+
+        <div class="row py-5">
+          <!--  -->
+          <div class="col-lg-4 col-md-6 col-sm-12 ">
+            <div class="card" style="width: 18rem;">
+              <img src="" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="text-center">Ankit Kushwaha</h5>
+                <p class="card-text">Responsible for overseeing the backend development, 
+                  ensuring the server-side components of the web application function efficiently and securely.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                
+                <h5 class="text-center">Kanika Dhoundiyal</h5>
+                <p class="card-text">Additionally, this role involves actively contributing to the preparation of the hackathon presentation, focusing on the main components of the PowerPoint (PPT).</p>
+
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="text-center">Deepanshi Kashyap</h5>
+                <p class="card-text">The primary responsibility entails presenting our project to the faculty members during the hackathon.</p>
+              </div>
+            </div>
+
+          </div>
+          <!--  -->
+        </div>
+
+        <!-- second row finsh--------------------- -->
+      </div>
+
+    </div>
+    <!-- card our team end -->
+
+
+
+    <!-- about section start------------------------------------- -->
+
+    <div class="container">
+
+      <div class="pt-5"><h1 class="text-center text-underline">Problem Statement</h1></div>
+
+
+      <div class="row">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="..." class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- equal two part -->
+
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="..." class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section end--------------------------------------- -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
